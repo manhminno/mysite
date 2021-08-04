@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+import os
 
 from pathlib import Path
 from django.utils.translation import ugettext_lazy as _
@@ -76,6 +77,8 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
             ]
         },
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "APP_DIRS": True,
     }
 ]
 
@@ -123,3 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
+
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+
+LOGIN_REDIRECT_URL = "/"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 09:25+0700\n"
+"POT-Creation-Date: 2021-08-04 15:03+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,111 +18,135 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\templates\base_generic.html:5
+#: .\catalog\templates\base_generic.html:5
 msgid "Local Library"
 msgstr "Thư viện địa phương"
 
-#: .\templates\base_generic.html:19
+#: .\catalog\templates\base_generic.html:19
 msgid "Home"
 msgstr "Trang chủ"
 
-#: .\templates\base_generic.html:20
+#: .\catalog\templates\base_generic.html:20
 msgid "All books"
 msgstr "Tất cả sách"
 
-#: .\templates\base_generic.html:21
+#: .\catalog\templates\base_generic.html:21
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\templates\catalog\book_detail.html:5
+#: .\catalog\templates\base_generic.html:25
+msgid "User:"
+msgstr "Người dùng"
+
+#: .\catalog\templates\base_generic.html:26
+msgid "My Borrowed"
+msgstr "Sách đã mượn"
+
+#: .\catalog\templates\base_generic.html:27
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#: .\catalog\templates\base_generic.html:29
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: .\catalog\templates\catalog\book_detail.html:5
 msgid "Title:"
 msgstr "Tiêu đề"
 
-#: .\templates\catalog\book_detail.html:7
+#: .\catalog\templates\catalog\book_detail.html:7
 msgid "Author:"
 msgstr "Tác giả:"
 
-#: .\templates\catalog\book_detail.html:8
+#: .\catalog\templates\catalog\book_detail.html:8
 msgid "Summary:"
 msgstr "Tóm tắt:"
 
-#: .\templates\catalog\book_detail.html:9
+#: .\catalog\templates\catalog\book_detail.html:9
 msgid "ISBN:"
 msgstr "ISBN:"
 
-#: .\templates\catalog\book_detail.html:10
+#: .\catalog\templates\catalog\book_detail.html:10
 msgid "Language:"
 msgstr "Ngôn ngữ:"
 
-#: .\templates\catalog\book_detail.html:11
+#: .\catalog\templates\catalog\book_detail.html:11
 msgid "Genre:"
 msgstr "Thể loại:"
 
-#: .\templates\catalog\book_detail.html:14
+#: .\catalog\templates\catalog\book_detail.html:14
 msgid "Copies"
 msgstr "Bản sao:"
 
-#: .\templates\catalog\book_detail.html:22
+#: .\catalog\templates\catalog\book_detail.html:22
 msgid "Due to be returned"
 msgstr "Hạn trả lại"
 
-#: .\templates\catalog\book_detail.html:24
+#: .\catalog\templates\catalog\book_detail.html:24
 msgid "Imprint:"
 msgstr "Xuất bản"
 
-#: .\templates\catalog\book_detail.html:25
+#: .\catalog\templates\catalog\book_detail.html:25
 msgid "Id:"
 msgstr "Id:"
 
-#: .\templates\catalog\book_list.html:5
+#: .\catalog\templates\catalog\book_list.html:5
 msgid "Book List"
 msgstr "Danh sách các quyển sách:"
 
-#: .\templates\catalog\book_list.html:15
+#: .\catalog\templates\catalog\book_list.html:15
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
 
-#: .\templates\index.html:5
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
+msgstr "Các cuốn sách đã mượn"
+
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:18
+msgid "There are no books borrowed."
+msgstr "Không có cuốn sách nào được mượn."
+
+#: .\catalog\templates\index.html:5
 msgid "Local Library Home"
 msgstr "Trang chủ thư viện địa phương"
 
-#: .\templates\index.html:6
+#: .\catalog\templates\index.html:6
 msgid "Welcome to LocalLibrary, a website developed by "
 msgstr ""
 "Chào mừng bạn đến với Thư viện địa phương, một trang web được phát triển bởi"
 
-#: .\templates\index.html:6
+#: .\catalog\templates\index.html:6
 msgid "Mozilla Developer Network"
 msgstr "mạng lưới phát triển Mozilla"
 
-#: .\templates\index.html:7
+#: .\catalog\templates\index.html:7
 msgid "Dynamic content"
 msgstr "Nội dung động"
 
-#: .\templates\index.html:8
+#: .\catalog\templates\index.html:8
 msgid "The library has the following record counts:"
 msgstr "Thư viện có số lượng bản ghi sau:"
 
-#: .\templates\index.html:10
+#: .\catalog\templates\index.html:10
 msgid "Books:"
 msgstr "Sách:"
 
-#: .\templates\index.html:11
+#: .\catalog\templates\index.html:11
 msgid "Copies:"
 msgstr "Bản sao:"
 
-#: .\templates\index.html:12
+#: .\catalog\templates\index.html:12
 msgid "Copies available:"
 msgstr "Bản sao có sẵn:"
 
-#: .\templates\index.html:13
+#: .\catalog\templates\index.html:13
 msgid "Authors:"
 msgstr "Tác giả:"
 
-#: .\templates\index.html:17 .\templates\index.html:19
+#: .\catalog\templates\index.html:17 .\catalog\templates\index.html:19
 msgid "You have visited this page "
 msgstr "Bạn đã truy cập trang này "
 
-#: .\templates\index.html:17 .\templates\index.html:19
+#: .\catalog\templates\index.html:17 .\catalog\templates\index.html:19
 msgid "time"
 msgstr "lần"
