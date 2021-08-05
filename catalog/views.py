@@ -51,7 +51,11 @@ class BookDetailView(generic.DetailView):
 
     def get(self, request, *args, **kwargs):
         book = get_object_or_404(Book, pk=kwargs["pk"])
-        context = {"book_instance_list": book.bookinstance_set.all(), "book": book, 'author': book.author}
+        context = {
+            "book_instance_list": book.bookinstance_set.all(),
+            "book": book,
+            "author": book.author,
+        }
         return render(request, "catalog/book_detail.html", context)
 
 
@@ -108,12 +112,17 @@ class AuthorDetailView(generic.DetailView):
         author = get_object_or_404(Author, pk=kwargs["pk"])
 
         book_copy = {}
-        author_list_book =  author.book_set.all()
+        author_list_book = author.book_set.all()
         for book in author_list_book:
             book_copy.update({book.pk: book.bookinstance_set.all().count()})
-        
-        context = {"author_list_book": author.book_set.all(), "author": author, "book_copy": book_copy}
+
+        context = {
+            "author_list_book": author.book_set.all(),
+            "author": author,
+            "book_copy": book_copy,
+        }
         return render(request, "catalog/author_detail.html", context)
+
 
 class AuthorListView(generic.ListView):
     """Generic class-based list view for a list of authors."""
@@ -130,7 +139,7 @@ class AuthorCreate(CreateView):
 
 class AuthorUpdate(UpdateView):
     model = Author
-    fields = ['first_name', 'last_name', 'date_of_birth', 'date_of_death']
+    fields = ["first_name", "last_name", "date_of_birth", "date_of_death"]
 
 
 class AuthorDelete(DeleteView):
