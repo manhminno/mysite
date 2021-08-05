@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 15:03+0700\n"
+"POT-Creation-Date: 2021-08-04 21:49+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,135 +18,189 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\catalog\templates\base_generic.html:5
+#: .\forms.py:8
+msgid "Enter a date between now and 4 weeks (default 3)."
+msgstr "Nhập một ngày trong phạm vi 4 tuần tiếp (mặc định là 3 tuần)."
+
+#: .\forms.py:15
+msgid "Invalid date - renewal in past"
+msgstr "Ngày gia hạn không hợp lệ - quá khứ"
+
+#: .\forms.py:19
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr "Ngày gia hạn không hợp lệ, chỉ được chọn trong phạm vi 4 tuần tới"
+
+#: .\templates\base_generic.html:5
 msgid "Local Library"
 msgstr "Thư viện địa phương"
 
-#: .\catalog\templates\base_generic.html:19
+#: .\templates\base_generic.html:19
 msgid "Home"
 msgstr "Trang chủ"
 
-#: .\catalog\templates\base_generic.html:20
+#: .\templates\base_generic.html:20
 msgid "All books"
 msgstr "Tất cả sách"
 
-#: .\catalog\templates\base_generic.html:21
+#: .\templates\base_generic.html:21
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\catalog\templates\base_generic.html:25
+#: .\templates\base_generic.html:25
 msgid "User:"
 msgstr "Người dùng"
 
-#: .\catalog\templates\base_generic.html:26
+#: .\templates\base_generic.html:26
 msgid "My Borrowed"
 msgstr "Sách đã mượn"
 
-#: .\catalog\templates\base_generic.html:27
+#: .\templates\base_generic.html:27
 msgid "Logout"
 msgstr "Đăng xuất"
 
-#: .\catalog\templates\base_generic.html:29
+#: .\templates\base_generic.html:29
 msgid "Login"
 msgstr "Đăng nhập"
 
-#: .\catalog\templates\catalog\book_detail.html:5
-msgid "Title:"
-msgstr "Tiêu đề"
+#: .\templates\catalog\author_confirm_delete.html:5
+msgid "Delete Author"
+msgstr "Xóa tác giả"
 
-#: .\catalog\templates\catalog\book_detail.html:7
+#: .\templates\catalog\author_confirm_delete.html:6
+msgid "Are you sure you want to delete the author:"
+msgstr "Bạn có chắc muốn xóa tác giả này không:"
+
+#: .\templates\catalog\author_confirm_delete.html:9
+msgid "Yes, delete."
+msgstr "Có, xóa."
+
+#: .\templates\catalog\author_detail.html:5
+#: .\templates\catalog\book_detail.html:7
 msgid "Author:"
 msgstr "Tác giả:"
 
-#: .\catalog\templates\catalog\book_detail.html:8
+#: .\templates\catalog\author_detail.html:8
+msgid "Books"
+msgstr "Sách:"
+
+#: .\templates\catalog\author_form.html:10
+#: .\templates\catalog\book_renew_librarian.html:13
+msgid "Submit"
+msgstr "Gửi"
+
+#: .\templates\catalog\author_list.html:5
+msgid "Author List"
+msgstr "Danh sách tác giả:"
+
+#: .\templates\catalog\author_list.html:17
+msgid "There are no authors available."
+msgstr "Hiện không có tác giả nào."
+
+#: .\templates\catalog\book_detail.html:5
+msgid "Title:"
+msgstr "Tiêu đề"
+
+#: .\templates\catalog\book_detail.html:8
 msgid "Summary:"
 msgstr "Tóm tắt:"
 
-#: .\catalog\templates\catalog\book_detail.html:9
+#: .\templates\catalog\book_detail.html:9
 msgid "ISBN:"
 msgstr "ISBN:"
 
-#: .\catalog\templates\catalog\book_detail.html:10
+#: .\templates\catalog\book_detail.html:10
 msgid "Language:"
 msgstr "Ngôn ngữ:"
 
-#: .\catalog\templates\catalog\book_detail.html:11
+#: .\templates\catalog\book_detail.html:11
 msgid "Genre:"
 msgstr "Thể loại:"
 
-#: .\catalog\templates\catalog\book_detail.html:14
+#: .\templates\catalog\book_detail.html:14
 msgid "Copies"
 msgstr "Bản sao:"
 
-#: .\catalog\templates\catalog\book_detail.html:22
+#: .\templates\catalog\book_detail.html:22
 msgid "Due to be returned"
 msgstr "Hạn trả lại"
 
-#: .\catalog\templates\catalog\book_detail.html:24
+#: .\templates\catalog\book_detail.html:24
 msgid "Imprint:"
 msgstr "Xuất bản"
 
-#: .\catalog\templates\catalog\book_detail.html:25
+#: .\templates\catalog\book_detail.html:25
 msgid "Id:"
 msgstr "Id:"
 
-#: .\catalog\templates\catalog\book_list.html:5
+#: .\templates\catalog\book_list.html:5
 msgid "Book List"
 msgstr "Danh sách các quyển sách:"
 
-#: .\catalog\templates\catalog\book_list.html:15
+#: .\templates\catalog\book_list.html:15
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
 
-#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:5
+#: .\templates\catalog\book_renew_librarian.html:5
+msgid "Renew:"
+msgstr "Gia hạn:"
+
+#: .\templates\catalog\book_renew_librarian.html:6
+msgid "Borrower:"
+msgstr "Người mượn:"
+
+#: .\templates\catalog\book_renew_librarian.html:7
+msgid "Due date:"
+msgstr "Ngày hết hạn:"
+
+#: .\templates\catalog\bookinstance_list_borrowed_user.html:5
 msgid "Borrowed books"
 msgstr "Các cuốn sách đã mượn"
 
-#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:18
+#: .\templates\catalog\bookinstance_list_borrowed_user.html:15
 msgid "There are no books borrowed."
 msgstr "Không có cuốn sách nào được mượn."
 
-#: .\catalog\templates\index.html:5
+#: .\templates\index.html:5
 msgid "Local Library Home"
 msgstr "Trang chủ thư viện địa phương"
 
-#: .\catalog\templates\index.html:6
+#: .\templates\index.html:6
 msgid "Welcome to LocalLibrary, a website developed by "
 msgstr ""
 "Chào mừng bạn đến với Thư viện địa phương, một trang web được phát triển bởi"
 
-#: .\catalog\templates\index.html:6
+#: .\templates\index.html:6
 msgid "Mozilla Developer Network"
 msgstr "mạng lưới phát triển Mozilla"
 
-#: .\catalog\templates\index.html:7
+#: .\templates\index.html:7
 msgid "Dynamic content"
 msgstr "Nội dung động"
 
-#: .\catalog\templates\index.html:8
+#: .\templates\index.html:8
 msgid "The library has the following record counts:"
 msgstr "Thư viện có số lượng bản ghi sau:"
 
-#: .\catalog\templates\index.html:10
+#: .\templates\index.html:10
 msgid "Books:"
 msgstr "Sách:"
 
-#: .\catalog\templates\index.html:11
+#: .\templates\index.html:11
 msgid "Copies:"
 msgstr "Bản sao:"
 
-#: .\catalog\templates\index.html:12
+#: .\templates\index.html:12
 msgid "Copies available:"
 msgstr "Bản sao có sẵn:"
 
-#: .\catalog\templates\index.html:13
+#: .\templates\index.html:13
 msgid "Authors:"
 msgstr "Tác giả:"
 
-#: .\catalog\templates\index.html:17 .\catalog\templates\index.html:19
+#: .\templates\index.html:17 .\templates\index.html:19
 msgid "You have visited this page "
 msgstr "Bạn đã truy cập trang này "
 
-#: .\catalog\templates\index.html:17 .\catalog\templates\index.html:19
+#: .\templates\index.html:17 .\templates\index.html:19
 msgid "time"
 msgstr "lần"
