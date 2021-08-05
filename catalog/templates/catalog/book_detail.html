@@ -3,16 +3,13 @@
 
 {% block content %}
   <h1>{% translate "Title:" %} {{ book.title }}</h1>
-
-  <p><strong>{% translate "Author:" %}</strong> <a href="">{{ book.author }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>{% translate "Author:" %}</strong> <a href="{% url 'author-detail' author.pk %}">{{ author }}</a></p> <!-- author detail link not yet defined -->
   <p><strong>{% translate "Summary:" %}</strong> {{ book.summary }}</p>
   <p><strong>{% translate "ISBN:" %}</strong> {{ book.isbn }}</p>
   <p><strong>{% translate "Language:" %}</strong> {{ book.language }}</p>
   <p><strong>{% translate "Genre:" %}</strong> {{ book.genre.all|join:", " }}</p>
-
   <div style="margin-left:20px;margin-top:20px">
     <h4>{% translate "Copies" %}</h4>
-
     {% for copy in book_instance_list %}
       <hr>
       <p class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'm' %}text-danger{% else %}text-warning{% endif %}">
