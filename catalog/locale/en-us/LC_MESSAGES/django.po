@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 21:54+0700\n"
+"POT-Creation-Date: 2021-08-09 09:06+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\forms.py:8
+#: .\forms.py:10
 msgid "Enter a date between now and 4 weeks (default 3)."
 msgstr ""
 
-#: .\forms.py:15
+#: .\forms.py:18
 msgid "Invalid date - renewal in past"
 msgstr ""
 
-#: .\forms.py:19
+#: .\forms.py:22
 msgid "Invalid date - renewal more than 4 weeks ahead"
 msgstr ""
 
@@ -61,6 +61,14 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
+#: .\templates\base_generic.html:33
+msgid "Staff"
+msgstr ""
+
+#: .\templates\base_generic.html:35
+msgid "All borrowed"
+msgstr ""
+
 #: .\templates\catalog\author_confirm_delete.html:5
 msgid "Delete Author"
 msgstr ""
@@ -73,12 +81,12 @@ msgstr ""
 msgid "Yes, delete."
 msgstr ""
 
-#: .\templates\catalog\author_detail.html:5
-#: .\templates\catalog\book_detail.html:7
+#: .\templates\catalog\author_detail.html:6
+#: .\templates\catalog\book_detail.html:6
 msgid "Author:"
 msgstr ""
 
-#: .\templates\catalog\author_detail.html:8
+#: .\templates\catalog\author_detail.html:9
 msgid "Books"
 msgstr ""
 
@@ -99,35 +107,35 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:8
+#: .\templates\catalog\book_detail.html:7
 msgid "Summary:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:9
+#: .\templates\catalog\book_detail.html:8
 msgid "ISBN:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:10
+#: .\templates\catalog\book_detail.html:9
 msgid "Language:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:11
+#: .\templates\catalog\book_detail.html:10
 msgid "Genre:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:14
+#: .\templates\catalog\book_detail.html:12
 msgid "Copies"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:22
+#: .\templates\catalog\book_detail.html:19
 msgid "Due to be returned"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:24
+#: .\templates\catalog\book_detail.html:21
 msgid "Imprint:"
 msgstr ""
 
-#: .\templates\catalog\book_detail.html:25
+#: .\templates\catalog\book_detail.html:22
 msgid "Id:"
 msgstr ""
 
@@ -151,12 +159,21 @@ msgstr ""
 msgid "Due date:"
 msgstr ""
 
-#: .\templates\catalog\bookinstance_list_borrowed_user.html:5
-msgid "Borrowed books"
+#: .\templates\catalog\bookinstance_list_borrowed_all.html:5
+msgid "All Borrowed Books"
 msgstr ""
 
+#: .\templates\catalog\bookinstance_list_borrowed_all.html:13
+msgid "Renew"
+msgstr ""
+
+#: .\templates\catalog\bookinstance_list_borrowed_all.html:19
 #: .\templates\catalog\bookinstance_list_borrowed_user.html:15
 msgid "There are no books borrowed."
+msgstr ""
+
+#: .\templates\catalog\bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
 msgstr ""
 
 #: .\templates\index.html:5
